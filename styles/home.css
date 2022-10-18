@@ -1,3 +1,11 @@
 #over-mij-section{
     height: 100vh;
+    margin: auto;
+    width: 90%;
+}
+
+.over-mij-section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
