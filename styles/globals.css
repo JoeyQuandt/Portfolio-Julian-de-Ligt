@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background: var(--pink-color);
+    overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4{
+    font-family: "Montserrat",sans-serif;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-family: 4rem;
+}
+
+h4{
+    font-family: 3.5rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+li,a,button{
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.high-light{
+    color: var(--green-color);
+}

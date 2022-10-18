@@ -1,0 +1,20 @@
+/*Import styles*/
+@import "globals.css";
+@import "nav-hero.css";
+@import "home.css";
+
+
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*Colors/Variables*/
+:root{
+    --green-color: #46CD24;
+    --pink-color: #FFF7F7;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --green-gradient-color: #DFF9E5;
+}
+
+
