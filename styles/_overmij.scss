@@ -1,0 +1,45 @@
+.overmij-content{
+    margin-top: 10em;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: -11.5em;
+    h2{
+        font-size: 4rem;
+    }
+    .tag-line{
+        font-size: 2.5rem;
+        color: $green-color;
+        font-weight: 600;
+        margin-left: 4.7em;
+    }
+}
+
+.overmij-informatie{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .overmij-tekst{
+        max-width: 800px;
+        padding: 1em;
+        font-size: $paragraph;
+        p{
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media screen and (max-width:40em){
+    .title{
+        text-align: center;
+        margin-bottom: 0em;
+        .tag-line{
+            margin-left: 0;
+        }
+    }
+    .overmij-ik{
+        display: none;
+    }
+}

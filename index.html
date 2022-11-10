@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio site | Julian de Ligt</title>
+    <title>JDL | Portfolio site</title>
     <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="icon" href="images/logo.svg"/>
+    <!--Blaze Slider-->
+    <link rel="stylesheet" href="https://unpkg.com/blaze-slider@1.8.0/dist/blaze.css"/>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                <img src="images/logo.svg" alt="logo"/>
+        <nav class="navbar-section">
+            <div class="logo">
+                <p>JDL</p>
             </div>
-            <ul class="nav-links">
-                <li class="nav-link"><a href="#">Over mij</a></li>
-                <li class="nav-link"><a href="#">Skills</a></li>
-                <li class="nav-link"><a href="#">Projecten</a></li>
-                <li class="nav-link"><a href="#">Contact</a></li>
+            <ul class="navbar-links">
+                <li class="navbar-link"><a href="#">Over mij</a></li>
+                <li class="navbar-link"><a href="#">Skills</a></li>
+                <li class="navbar-link"><a href="#">Projecten</a></li>
+                <li class="navbar-link"><a href="#">Contact</a></li>
             </ul>
             <div class="burger">
                 <span class="line1"></span>
@@ -26,55 +29,67 @@
                 <span class="line3"></span>
             </div>
         </nav>
+        <div class="header-content">
+            <div class="header-title">
+                <h1>Julian</h1>
+                <h2>de Ligt</h2>
+            </div>
+            <div class="header-tag">
+                <h2>Designer/Web analist</h2>
+            </div>
+            <div class="header-socials">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="header-title-mobile">
+            <h1>Julian</h1>
+            <h2>de Ligt</h2>
+            <div class="header-socials-mobile">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="hero-section">
-            <div class="hero-section-text">
-                <div class="hero-section-header">
-                    <h1 class="high-light">Julian</h1>
-                    <h1 class="tag">de Ligt</h1>
+        <section class="overmij">
+            <div class="overmij-content">
+                <div class="title">
+                    <h2>Hey, ik ben Julian!</h2>
+                    <h2 class="tag-line">UI-Design/Web Analist</h2>
                 </div>
-                <div class="hero-section-tag">
-                    <h2>Designer / Web analist</h2>
-                </div>
-                <div class="hero-section-social">
-                    <img src="images/facebook.svg" alt="facebook"/>
-                    <img src="images/instagram.svg" alt="instagram"/>
-                    <img src="images/linkedin.svg" alt="linkedin"/>
-                </div>
-            </div>
-        </section>
-        <section id="over-mij-section">
-            <div class="over-mij-title">
-                <h1>Hey, ik ben Julian!</h1>
-                <h2>UI-Designer/Web Analist</h2>
-            </div>
-            <div class="over-mij-section-content">
-                <img src="images/overmij.png" alt="over"/>
-                <div class="over-mij-section-text">
-                    <p>
-                        Ik woon in Vlaardingen en studeer CMD aan de Haagse
-                        Hogeschool. Mijn grootste passie is voetbal en ik denk
-                        dat ik met de eigenschappen van een echte voetballer
-                        (teamplayer, uithoudingsvermogen, winnaarsmentaliteit)
-                        en mijn gezelligheid een versterking voor elk team kan 
-                        zijn! Verder ben ik erg leergierig en vind ik het zeker niet
-                        erg om anderen te helpen óók hogerop te komen. 
-                    </p>
-
-                    <p>
-                        Zoekt u een gezellige, maar toch hardwerkende stagiair?
-                        Hier ben ik! Stuur me gerust een berichtje en wie weet 
-                        kom ik me binnenkort onder het genot van een bakje
-                        koffie verder voorstellen!
-                    </p>
-
-                    <button>Download mijn cv</button>
+                <div class="overmij-informatie">
+                    <img class="overmij-ik" src="images/julian.png" alt="Julian"/>
+                    <div class="overmij-tekst">
+                        <p> 
+                            Ik woon in Vlaardingen en studeer CMD aan de Haagse
+                            Hogeschool. Mijn grootste passie is voetbal en ik denk
+                            dat ik met de eigenschappen van een echte voetballer
+                            (teamplayer, uithoudingsvermogen, winnaarsmentaliteit)
+                            en mijn gezelligheid een versterking voor elk team kan 
+                            zijn! Verder ben ik erg leergierig en vind ik het zeker niet
+                            erg om anderen te helpen óók hogerop te komen. 
+                        </p>
+                        <p>
+                            Zoekt u een gezellige, maar toch hardwerkende stagiair?
+                            Hier ben ik! Stuur me gerust een berichtje en wie weet 
+                            kom ik me binnenkort onder het genot van een bakje
+                            koffie verder voorstellen!
+                        </p>
+                        <a class="button" href="#">Download mijn CV</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="app.js"></script>
+
+
+
+
+    <script type="module" src="app.js"></script>
+    <script src="https://unpkg.com/blaze-slider@1.8.0/dist/blaze-slider.min.js"></script>
 </body>
 </html>
