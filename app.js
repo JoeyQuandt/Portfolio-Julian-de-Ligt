@@ -2,8 +2,9 @@ const navBar = document.getElementById("navbar-section")
 const nav = document.querySelector(".navbar-links");
 const burger = document.querySelector(".burger");
 const links = nav.querySelectorAll("a");
+const el = document.querySelector('.blaze-slider')
 
-
+new BlazeSlider(el)
 /*Scrolling active*/
 window.addEventListener("scroll",function(){
   let windowPosition = window.scrollY>0;
@@ -22,3 +23,5 @@ links.forEach((link) => {
     burger.classList.toggle("toggle");
   });
 });
+
+

@@ -1,0 +1,80 @@
+.projecten-title{
+    display: flex;
+    position: relative;
+    padding: 3.5em;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        font-size: 15rem;
+        overflow: hidden;
+        color: $green-color;
+        opacity: 0.4;
+        text-transform: uppercase;
+    }
+    .projecten-title-text{
+        z-index: 1;
+        margin-top: -5em;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.projecten-cards{
+    display: flex;
+    gap: 1em;
+}
+
+.project1{
+    text-align: center;
+    background: black;
+    cursor: pointer;
+    width: 100%;
+    height: 15em;
+}
+
+.project2{
+    text-align: center;
+    background: #B1BF29;
+    cursor: pointer;
+    width: 100%;
+}
+.project3{
+    text-align: center;
+    background: #F65A23;
+    cursor: pointer;
+    height: 15em;
+    width: 100%;
+}
+
+.blaze-pagination {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  
+
+.blaze-pagination button {
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: $green-color;
+    cursor: pointer;
+    transition: transform 200ms ease, background-color 300ms ease;
+  }
+  
+.blaze-pagination button.active {
+    background: $green-color;
+    transform: scale(1.3);
+}
+
+.blaze-container{
+    display: flex;
+    gap: 2.5em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

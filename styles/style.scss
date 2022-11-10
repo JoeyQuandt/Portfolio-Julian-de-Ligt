@@ -37,10 +37,37 @@ li,a{
 /*Import stylesheets*/
 @import "header-navbar";
 @import "overmij";
+@import "skills";
+@import "projecten";
+
+
 
 @media  screen and (max-width:40em){
     html{
-        font-size: 60%;
+        font-size: 70%;
+    }
+    .skills-image{
+        display: none;
+    }
+    .skills-information{
+        h1{
+            display: none;
+        }
+    }
+    .overmij-ik{
+        display: none;
+    }
+
+    .projecten-cards{
+        flex-wrap: wrap;
+    }
+    .projecten-title{
+        h1{
+            display: none;
+        }
+        .projecten-title-text{
+            margin: 0;
+        }
     }
 
 }
