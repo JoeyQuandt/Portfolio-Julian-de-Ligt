@@ -101,57 +101,6 @@ header {
   margin-left: 5em;
 }
 
-/*Hamburger Menu*/
-@media screen and (max-width: 40em) {
-  /*Burger Menu*/
-  .burger {
-    background: blue;
-    position: relative;
-    z-index: 2;
-    display: block;
-    cursor: pointer;
-  }
-  .burger span {
-    padding: 0.2rem 2rem;
-    background: #fff;
-    margin: 0.5rem;
-    display: block;
-    transition: all 0.5s ease;
-  }
-  .navbar-links a {
-    color: #fff;
-    text-decoration: underline;
-    font-size: 1.5rem;
-  }
-  .navbar-links {
-    z-index: 2;
-    background: #46CD24;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 1s ease;
-  }
-  .nav-open {
-    transform: translate(-100%);
-  }
-  .toggle .line1 {
-    transform: rotateZ(45deg) translateY(300%);
-    background-color: white;
-  }
-  .toggle .line3 {
-    transform: rotateZ(-45deg) translateY(-300%);
-    background-color: white;
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-}
 .overmij-content {
   margin-top: 10em;
 }
@@ -333,6 +282,10 @@ header {
   .skills-information h1 {
     display: none;
   }
+  header {
+    height: 75vh;
+    background-position: left;
+  }
   .overmij-ik {
     display: none;
   }
@@ -344,5 +297,52 @@ header {
   }
   .projecten-title .projecten-title-text {
     margin: 0;
+  }
+  /*Burger Menu*/
+  .burger {
+    position: relative;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: #fff;
+    margin: 0.5rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .navbar-links a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+  .navbar-links {
+    z-index: 2;
+    background: #46CD24;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+  .nav-open {
+    transform: translate(-100%);
+  }
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background-color: white;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background-color: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */
